@@ -1,6 +1,8 @@
 let playerScore=0
 let computerScore=0
 let roundEnding = " "
+let playerSelection = "rock"
+let computerSelection = getComputerChoice()
 
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random()*3)
@@ -14,7 +16,6 @@ function getComputerChoice() {
     }
 }
 
-let playerSelection = "rock"
 
 function playRound(computerSelection, playerSelection) {
 
@@ -37,11 +38,10 @@ function playRound(computerSelection, playerSelection) {
     console.log(computerSelection)
 
     return roundEnding
-
+    return computerScore
+    return playerScore
 }
-console.log(playRound(getComputerChoice(), playerSelection))
+console.log(playRound(computerSelection, playerSelection))
 
-function GameOver() {
-    playerScore == 5 || computerScore == 5
-    alert ("GameOver")
-}
+console.log("Computer's score " + computerScore)
+console.log("Your score " + playerScore)
