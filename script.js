@@ -35,12 +35,12 @@ function playRound(computerSelection, playerSelection) {
     if (playerSelection == computerSelection ) {
     roundEnding = "It's a Tie!" }
 
-    console.log(computerSelection)
-
     return roundEnding
     return computerScore
     return playerScore
 }
+console.log("Computer's choice= " + computerSelection)
+console.log("Your choice= " + playerSelection)
 console.log(playRound(computerSelection, playerSelection))
 
 console.log("Computer's score " + computerScore)
